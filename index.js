@@ -672,41 +672,41 @@
 
 //local storage and session storage  
 
-const input = document.querySelector("input")
-const btnclick = document.querySelector("#click")
-const btnlogout = document.querySelector("#clear")
+// const input = document.querySelector("input")
+// const btnclick = document.querySelector("#click")
+// const btnlogout = document.querySelector("#clear")
 
-btnclick.style.backgroundColor = "green"
-btnclick.style.Color = "white"
-btnclick.style.border = "none"
-btnclick.style.width = "100px"
-btnclick.style.height = "50px"
-
-
-btnlogout.style.backgroundColor = "green"
-btnlogout.style.Color = "white"
-btnlogout.style.border = "none"
-btnlogout.style.width = "100px"
-btnlogout.style.height = "50px"
-
-const addData = (e) =>
-{
-    localStorage.setItem("key",JSON.stringify({
-        name: ram;,
-        age: 23;,
-        ismarried: false;,
-    }))
-}
-
-btnclick.addEventListener("click" , addData)
- btnlogout.addEventListener("click", ()=>
- {
-    localStorage.removeItem("key",input.value)
- })
+// btnclick.style.backgroundColor = "green"
+// btnclick.style.Color = "white"
+// btnclick.style.border = "none"
+// btnclick.style.width = "100px"
+// btnclick.style.height = "50px"
 
 
-if(localStorage.getItem("key"))
-{
+// btnlogout.style.backgroundColor = "green"
+// btnlogout.style.Color = "white"
+// btnlogout.style.border = "none"
+// btnlogout.style.width = "100px"
+// btnlogout.style.height = "50px"
+
+// const addData = (e) =>
+// {
+//     localStorage.setItem("key",JSON.stringify({
+//         name: ram;,
+//         age: 23;,
+//         ismarried: false;,
+//     }))
+// }
+
+// btnclick.addEventListener("click" , addData)
+//  btnlogout.addEventListener("click", ()=>
+//  {
+//     localStorage.removeItem("key",input.value)
+//  })
+
+
+// if(localStorage.getItem("key"))
+// {
     
-    alert(localStorage.getItem("key"))
-}
+//     alert(localStorage.getItem("key"))
+// }
