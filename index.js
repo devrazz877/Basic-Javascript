@@ -672,41 +672,331 @@
 
 //local storage and session storage  
 
-const input = document.querySelector("input")
-const btnclick = document.querySelector("#click")
-const btnlogout = document.querySelector("#clear")
+// const input = document.querySelector("input")
+// const btnclick = document.querySelector("#click")
+// const btnlogout = document.querySelector("#clear")
 
-btnclick.style.backgroundColor = "green"
-btnclick.style.Color = "white"
-btnclick.style.border = "none"
-btnclick.style.width = "100px"
-btnclick.style.height = "50px"
-
-
-btnlogout.style.backgroundColor = "green"
-btnlogout.style.Color = "white"
-btnlogout.style.border = "none"
-btnlogout.style.width = "100px"
-btnlogout.style.height = "50px"
-
-const addData = (e) =>
-{
-    localStorage.setItem("key",JSON.stringify({
-        name: ram;,
-        age: 23;,
-        ismarried: false;,
-    }))
-}
-
-btnclick.addEventListener("click" , addData)
- btnlogout.addEventListener("click", ()=>
- {
-    localStorage.removeItem("key",input.value)
- })
+// btnclick.style.backgroundColor = "green"
+// btnclick.style.Color = "white"
+// btnclick.style.border = "none"
+// btnclick.style.width = "100px"
+// btnclick.style.height = "50px"
 
 
-if(localStorage.getItem("key"))
-{
+// btnlogout.style.backgroundColor = "green"
+// btnlogout.style.Color = "white"
+// btnlogout.style.border = "none"
+// btnlogout.style.width = "100px"
+// btnlogout.style.height = "50px"
+
+// const addData = (e) =>
+// {
+//     localStorage.setItem("key",JSON.stringify({
+//         name: ram;,
+//         age: 23;,
+//         ismarried: false;,
+//     }))
+// }
+
+// btnclick.addEventListener("click" , addData)
+//  btnlogout.addEventListener("click", ()=>
+//  {
+//     localStorage.removeItem("key",input.value)
+//  })
+
+
+// if(localStorage.getItem("key"))
+// {
     
-    alert(localStorage.getItem("key"))
+//     alert(localStorage.getItem("key"))
+// }
+
+
+
+
+// SetTimeout and setinterval
+
+
+// const btnclear = document.querySelector("#clear")
+
+
+// const myfunc = () =>
+// {
+//     console.log("hellooooooo");
+// }
+// setTimeout(myfunc,3000);
+// btnclear.addEventListener("click", ()=> {
+//     clearTimeout(myfunc);
+// });
+
+
+
+//  const intervalId = setInterval(()=>
+// {
+//     const now = new Date()
+//     console.log(now.toLocaleTimeString())
+//     document.write(now.toLocaleTimeString())
+// },1000)
+
+// setTimeout(()=>{
+//     clearInterval(intervalId);
+// },7000)
+
+
+
+//OOP(OBJRCT ORIENTED PROGRAMMING)
+
+
+
+// function Person(name , age)
+// {
+//     this.name = name 
+//     this.age = age
+
+
+//     this.greet = function()
+//     {
+//         console.log(`my name is : ${this.name} and my age is : ${this.age}`)
+//     }
+// }
+
+// const person1 = new Person("ram",22)
+// const person2 = new Person("ramu",22)
+// const person3 = new Person("ramug",22)
+
+// console.log(person1,person2,person3)
+// person1.greet()
+
+
+// function Bankaccount(customername,balance=0)
+// {
+//     this.customername = customername
+//     this.accno = Date.now()
+//     this.balance = balance
+
+//     this.deposite = function(amount)
+//     {
+//         this.balance += amount
+//     }
+
+
+//     this.withdraw = function(amount)
+//     {
+//         this.balance -= amount
+//     }
+// }
+
+// // const ramacc = new Bankaccount ("ram",7000)
+// // ramacc.deposit(2000)
+// // const ramuacc = new Bankaccount ("ramu",7000)
+// // ramuacc.withdraw(2000)
+
+// // console.log(ramacc,ramuacc)
+
+
+// const addform = document.querySelector("#addamount")
+// const customername = document.querySelector("#customername")
+// const balance = document.querySelector("#balance")
+
+
+// const depositeform = document.querySelector("#depositeamount")
+// const accnumber = document.querySelector("#accnumber")
+// const amount = document.querySelector("#amount")
+
+
+// let accounts = [] 
+
+// addform.addEventListener("submit",(e)=>
+
+// {
+//     e.preventDefault()
+//     const newAccount = new Bankaccount(customername.value, +balance.value)
+//     accounts.push(newAccount)
+
+// console.log(accounts)
+
+// })
+
+// depositeform.addEventListener("submit",(e)=>
+// {
+//     e.preventDefault();
+//     const newAccount = accounts.find(
+//         (value,index)=> value.accnumber === +accnumber.value
+//     )
+
+//     newAccount.deposite(+amount.value)
+
+//     console.log(accounts)
+// })
+
+
+
+// function Bankaccount(customerName,balance=0)
+// {
+//     this.customerName = customerName;
+//     this.accountName = Date.now();
+//     this.balance= balance;
+
+
+//     this.deposite = function(amount)
+//     {
+//         this.balance +=amount ;
+//     };
+
+//     this.withdraw = function(amount)
+//     {
+//         this.balance -=amount;
+//     };
+// }
+// // BankAccount.prototype.add = "murra ho"
+// // console.log(BankAccount.prototype)
+// // const ramacc = new Bankaccount("ram",5000)
+// // const ramuacc = new Bankaccount("ramu",5000)
+
+// function savingacc(customerName,balance=0)
+// {
+//     Bankaccount.call(this,customerName,balance=0)
+//     this.transactionlimit = 50000;
+// }
+
+// savingacc.prototype = Object.create(Bankaccount.prototype);
+// savingacc.prototype.takepersonalloan = function(amount)
+// {
+//     console.log(`taking personal load is  ${amount}`);
+// }
+
+// const ramacc = new savingacc("ram",5000)
+// const ramuacc = new savingacc("ramu",5000)
+//  ramuacc.deposite(2000)
+
+//  ramuacc.takepersonalloan(50000);
+// console.log(ramacc)
+// console.log(ramuacc)
+
+
+
+
+//CLASS  
+
+
+
+
+
+
+
+class BankAccount
+{
+        customerName;
+        accountNumber;
+        #balance=0;
+    constructor(customerName,balance=0)
+    {
+        this.customerName = customerName;
+        this.accountNumber = Date.now();
+        this.#balance = balance;              //encapluate propertes
+    }
+
+    deposite(amount)
+    {
+        this.#balance += amount;
+    }
+
+    withdraw(amount)
+    {
+        this.#balance -= amount;
+    } 
+
+    setbalance(newbalance)
+    {
+        if(isNaN(newbalance))
+        {
+            throw new Error("number must be valid")
+        }
+        this.#balance = newbalance;
+    }
+
+
+    getBalance()
+    {
+        return this.#balance;
+    }
 }
+
+
+// const ramacc = new BankAccount("Ram",5000)
+// const sitsacc = new BankAccount("Sita",5000)
+// ramacc.withdraw(2000);
+
+// console.log(ramacc);
+
+
+
+// class savingacc extends BankAccount
+// {
+//     constructor(customerName,balance=0)
+//     {
+//        super(customerName,balance)
+//     }
+
+//     transactionlimit=50000;
+// }
+
+
+// const ramacc = new savingacc("ram" ,3000)
+// ramacc.deposite(3000);
+// console.log(ramacc);
+
+
+
+
+
+
+
+
+
+// class person
+// {
+//     constructor(name,age=0,gender)
+//     {
+//         this.name = name
+//         this.age = age
+//         this.gender= gender
+//     }
+
+// }
+
+// const person1 = new person("dev",22,"male")
+// console.log(person1)
+
+
+
+
+class currentacc extends BankAccount
+{    
+    transcationlimit = 50000;
+    constructor(customerName,balance=0)
+    {
+        super(customerName,balance);
+    }
+
+    #calculateinterest()
+    {
+        console.log(`calculating amount for: ${amount}`);
+        const interest = amount * 0.05;
+        console.log(`Calculated interest rate is : ${interest}`);
+    }
+        
+    
+
+    takebusinessloan(amount)
+    {
+       
+        console.log(`taking business loan is : ${amount}`) ;
+        this.#calculateinterest(amount);
+    }
+}
+
+const ramacc = new currentacc("ram",7000)
+// ramacc.setbalance("10000");
+ramacc.takebusinessloan(20000);
+console.log(ramacc)
